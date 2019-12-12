@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <LinearLayout
+        android:id="@+id/lay_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/text_margin">
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/h_name"
+                android:inputType="textPersonName"
+                android:tag="name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/h_phone"
+                android:inputType="phone"
+                android:tag="phone"
+                android:textAlignment="viewStart" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_marginBottom="@dimen/option_margin"
+            android:layout_weight="1"
+            android:ems="10"
+            android:paddingLeft="4sp"
+            android:paddingRight="4sp"
+            android:text="@string/t_sex"
+            android:textAppearance="@style/TextAppearance.Design.Counter"
+            android:textColor="?android:attr/textColorHint" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/text_margin">
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/text_margin"
+                android:layout_weight="1"
+                android:onClick="onRadioClicked"
+                android:tag="sex_male"
+                android:text="@string/t_male" />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onRadioClicked"
+                android:tag="sex_female"
+                android:text="@string/t_female" />
+
+        </RadioGroup>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/edit_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/h_address"
+                android:inputType="text"
+                android:tag="address"
+                android:textAlignment="viewStart" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/edit_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:cursorVisible="false"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/h_date1"
+                android:inputType="date"
+                android:onClick="showDateDialog"
+                android:tag="start_date" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/edit_date2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_weight="1"
+                android:cursorVisible="false"
+                android:autofillHints=""
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/h_date2"
+                android:inputType="date"
+                android:onClick="showDateDialog"
+                android:tag="end_date" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_marginBottom="@dimen/option_margin"
+            android:layout_weight="1"
+            android:ems="10"
+            android:paddingLeft="4sp"
+            android:paddingRight="4sp"
+            android:text="@string/t_check"
+            android:textAppearance="@style/TextAppearance.Design.Counter"
+            android:textColor="?android:attr/textColorHint" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/text_margin">
+
+            <CheckBox
+                android:id="@+id/check_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/text_margin"
+                android:onClick="onCheckClicked"
+                android:tag="work"
+                android:text="@string/c_work" />
+
+            <CheckBox
+                android:id="@+id/check_smoke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/text_margin"
+                android:onClick="onCheckClicked"
+                android:tag="smoke"
+                android:text="@string/c_smoke" />
+
+            <CheckBox
+                android:id="@+id/check_gym"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/text_margin"
+                android:onClick="onCheckClicked"
+                android:tag="workout"
+                android:text="@string/c_gym" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

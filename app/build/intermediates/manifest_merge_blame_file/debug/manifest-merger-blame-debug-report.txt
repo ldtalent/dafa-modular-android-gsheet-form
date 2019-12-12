@@ -1,0 +1,56 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.arsenicbismuth.syncedform"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\Ezeuz\Workbench\Android\Project\SyncedForm_OnePage\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->D:\Ezeuz\Workbench\Android\Project\SyncedForm_OnePage\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\Ezeuz\Workbench\Android\Project\SyncedForm_OnePage\app\src\main\AndroidManifest.xml:5:5-67
+11-->D:\Ezeuz\Workbench\Android\Project\SyncedForm_OnePage\app\src\main\AndroidManifest.xml:5:22-64
+12
+13    <application
+13-->D:\Ezeuz\Workbench\Android\Project\SyncedForm_OnePage\app\src\main\AndroidManifest.xml:7:5-24:19
+14        android:allowBackup="true"
+14-->D:\Ezeuz\Workbench\Android\Project\SyncedForm_OnePage\app\src\main\AndroidManifest.xml:8:9-35
+15        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+15-->[com.android.support:support-compat:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\27f8e468010bd7383f2b5e25b64bfecd\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->D:\Ezeuz\Workbench\Android\Project\SyncedForm_OnePage\app\src\main\AndroidManifest.xml:9:9-43
+18        android:label="@string/app_name"
+18-->D:\Ezeuz\Workbench\Android\Project\SyncedForm_OnePage\app\src\main\AndroidManifest.xml:10:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->D:\Ezeuz\Workbench\Android\Project\SyncedForm_OnePage\app\src\main\AndroidManifest.xml:11:9-54
+20        android:supportsRtl="true"
+20-->D:\Ezeuz\Workbench\Android\Project\SyncedForm_OnePage\app\src\main\AndroidManifest.xml:12:9-35
+21        android:testOnly="true"
+22        android:theme="@style/AppTheme" >
+22-->D:\Ezeuz\Workbench\Android\Project\SyncedForm_OnePage\app\src\main\AndroidManifest.xml:13:9-40
+23        <activity
+23-->D:\Ezeuz\Workbench\Android\Project\SyncedForm_OnePage\app\src\main\AndroidManifest.xml:14:9-23:20
+24            android:name="com.arsenicbismuth.syncedform.ScrollingActivity"
+24-->D:\Ezeuz\Workbench\Android\Project\SyncedForm_OnePage\app\src\main\AndroidManifest.xml:15:13-46
+25            android:label="@string/app_name"
+25-->D:\Ezeuz\Workbench\Android\Project\SyncedForm_OnePage\app\src\main\AndroidManifest.xml:16:13-45
+26            android:theme="@style/AppTheme.NoActionBar" >
+26-->D:\Ezeuz\Workbench\Android\Project\SyncedForm_OnePage\app\src\main\AndroidManifest.xml:17:13-56
+27            <intent-filter>
+27-->D:\Ezeuz\Workbench\Android\Project\SyncedForm_OnePage\app\src\main\AndroidManifest.xml:18:13-22:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->D:\Ezeuz\Workbench\Android\Project\SyncedForm_OnePage\app\src\main\AndroidManifest.xml:19:17-69
+28-->D:\Ezeuz\Workbench\Android\Project\SyncedForm_OnePage\app\src\main\AndroidManifest.xml:19:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->D:\Ezeuz\Workbench\Android\Project\SyncedForm_OnePage\app\src\main\AndroidManifest.xml:21:17-77
+30-->D:\Ezeuz\Workbench\Android\Project\SyncedForm_OnePage\app\src\main\AndroidManifest.xml:21:27-74
+31            </intent-filter>
+32        </activity>
+33    </application>
+34
+35</manifest>

@@ -1,0 +1,7 @@
+#Thu Dec 12 05:47:18 ICT 2019
+base.0=D\:\\Ezeuz\\Workbench\\Android\\Project\\SyncedForm_OnePage\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=D\:\\Ezeuz\\Workbench\\Android\\Project\\SyncedForm_OnePage\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
