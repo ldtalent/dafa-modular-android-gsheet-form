@@ -13,3 +13,5 @@ Complete explanation can be found in the [LearningDollars blog](https://blog.lea
 ## Setup
 
 Modify as necessary following the procedures listed in the blog mentioned above. Remember to change the URL inside ScrollingActivity.java to the link to your own Google Scrip web-app. Lastly, just build & deploy the app into a phone or AVD.
+
+The Google Script example is placed inside `extras/` directory alongside with a sample app package.
